@@ -1,14 +1,14 @@
 function isPrime(num) {
-  let counter = 0;
+
+  let factor = 0;
   for (let i = 1; i <= num; i++) {
     if (num % i == 0) {
       factor++;
     }
   }
-  return counter == 2;
-
+  return factor == 2
 }
-let n = 8;
+let n=8;
 let ans = isPrime(n);
 if (ans == true) {
   console.log(n, "is prime");
